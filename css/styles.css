@@ -1,0 +1,158 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Kumbh Sans', sans-serif;
+	background-color: hsl(185, 75%, 39%);
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.top-bg {
+	position: absolute;
+	width: 150%;
+	bottom: 60%;
+	right: 46%;
+	z-index: -1;
+	border: none;
+}
+
+.bottom-bg {
+	position: absolute;
+	width: 150%;
+	top: 55%;
+	left: 46%;
+	z-index: -1;
+	border: none;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 97vh;
+}
+
+.card-container {
+	text-align: center;
+	border-radius: 0.7em;
+	background-color: whitesmoke;
+	position: relative;
+	box-shadow: 0px 0px 15px 0px rgba(89, 89, 89, 0.3);
+}
+
+.card-top-bg {
+	background-image: url(/images/bg-pattern-card.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-top-left-radius: 0.7em;
+	border-top-right-radius: 0.7em;
+	height: 8em;
+}
+
+.card-presentation {
+	padding-top: 4rem;
+}
+
+.card-presentation > h1 {
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+h1 > span {
+	font-size: 1.1em;
+	font-weight: 400;
+	padding-left: 0.3em;
+	color: hsl(0, 0%, 59%);
+}
+
+.card-presentation > h3 {
+	font-size: 0.9em;
+	font-weight: 400;
+	color: hsl(0, 0%, 59%);
+	padding-bottom: 0.5rem;
+}
+
+.card-social-photo {
+	border-radius: 50%;
+	border: 0.3rem solid whitesmoke;
+	position: absolute;
+	top: 4.6em;
+	left: 6.6em;
+}
+
+.card-social-details {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 1em 1em;
+	border-top: 0.1rem solid rgb(233, 232, 232);
+}
+
+.card-social-details > p {
+	padding: 0 2.2em;
+	font-size: 0.65em;
+	letter-spacing: 0.1rem;
+	color: hsl(0, 0%, 59%);
+}
+
+p > span {
+	padding-bottom: 0.4em;
+	display: block;
+	font-weight: 700;
+	letter-spacing: 0;
+	font-size: 1.1rem;
+	color: black;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	text-decoration: none;
+	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 540px) {
+	.top-bg {
+		width: 150%;
+		right: 35%;
+		bottom: 58%;
+	}
+
+	.bottom-bg {
+		width: 150%;
+		top: 45%;
+		left: 36%;
+	}
+}
+
+@media (min-width: 900px) {
+	.top-bg {
+		width: 100%;
+		right: 45%;
+		bottom: 58%;
+	}
+
+	.bottom-bg {
+		width: 100%;
+		top: 45%;
+		left: 46%;
+	}
+}
+
+@media (min-width: 1160px) {
+	.top-bg {
+		width: 80%;
+		right: 50%;
+		bottom: 20%;
+	}
+
+	.bottom-bg {
+		width: 60%;
+		top: 50%;
+		left: 50%;
+	}
+}
